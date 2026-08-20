@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="BT Viman Nagar 5GHz Wi-Fi captive portal demonstration"
+  >
+
+  <title>BT Viman Nagar 5GHz</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="portal-card">
+
+    <div class="wifi-logo" aria-hidden="true">
+      📶
+    </div>
+
+    <h1>BT Viman Nagar</h1>
+
+    <p class="network-name">
+      Free Wi-Fi · 5 GHz
+    </p>
+
+    <!-- Terms Section -->
+    <section id="terms-section">
+
+      <h2>Welcome</h2>
+
+      <p>
+        Please review and accept the terms and conditions
+        before continuing.
+      </p>
+
+      <div class="terms-box">
+        <p>
+          This is an authorized Wi-Fi demonstration network.
+          Use the network responsibly and only for permitted
+          activities.
+        </p>
+      </div>
+
+      <label class="agreement">
+        <input type="checkbox" id="terms-checkbox">
+        <span>I agree to the Terms & Conditions</span>
+      </label>
+
+      <button id="accept-button" disabled>
+        Accept & Continue
+      </button>
+
+    </section>
+
+    <!-- Connected Section -->
+    <section id="connected-section" hidden>
+
+      <div class="success-icon">
+        ✓
+      </div>
+
+      <h2>Connected</h2>
+
+      <p>
+        Welcome to BT Viman Nagar.
+      </p>
+
+      <div class="audio-player">
+
+        <h3>🔊 Audio Test</h3>
+
+        <p>
+          Press the button below to play the test audio.
+        </p>
+
+        <button id="play-button">
+          ▶ Play Audio
+        </button>
+
+        <audio id="audio-player" controls preload="none">
+          <source
+            src="assets/audio.mp3"
+            type="audio/mpeg"
+          >
+
+          Your browser does not support HTML audio.
+        </audio>
+
+        <p id="audio-status" class="status"></p>
+
+      </div>
+
+    </section>
+
+    <footer>
+      <p>Private Wi-Fi Laboratory</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
